@@ -1,0 +1,26 @@
+{
+  "name": "mithril-admin-bootstrap",
+  "version": "0.0.1",
+  "description": "Twitter Bootstrap plugin for mithril-admin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kopa-app/mithril-admin-bootstrap.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "mithril-admin"
+  ],
+  "author": "Ondrej Brinkel <info@kopa.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kopa-app/mithril-admin-bootstrap/issues"
+  },
+  "homepage": "https://github.com/kopa-app/mithril-admin-bootstrap#readme",
+  "devDependencies": {
+    "mithril": "^0.2.2-rc.1"
+  }
+}
