@@ -19,6 +19,17 @@ module.exports = function () {
       return m('.btn-group', actionsView.apply(null, arguments));
     };
 
+    var filtersView = app.components.listFilters.view;
+    app.components.listFilters.view = function () {
+      return m('.panel.panel-default.m-admin-list-filters-wrapper', m('.panel-body', filtersView.apply(null, arguments)));
+    };
+    app.components.listFilters.theme.fieldsClass = '.form-inline';
+    app.components.listFilters.theme.fieldClass = '.form-group';
+    app.components.listFilters.theme.sortClass = '.form-inline';
+    app.components.listFilters.theme.sortByInputClass = '.form-control';
+    app.components.listFilters.theme.sortDirInputClass = '.form-control';
+    app.components.listFilters.theme.applyButtonClass = '.btn.btn-primary';
+
     // show resource
     app.components.show.theme.backButtonClass = '.btn.btn-default';
     app.components.show.theme.listButtonClass = '.btn.btn-default';
